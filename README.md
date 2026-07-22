@@ -14,6 +14,7 @@
     <img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white" alt="Flutter" />
     <img src="https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white" alt="Dart" />
     <img src="https://img.shields.io/badge/Architecture-Clean%20Architecture-brightgreen?style=for-the-badge" alt="Clean Architecture" />
+    <img src="https://img.shields.io/badge/CI%2FCD-GitHub%20Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white" alt="CI/CD GitHub Actions" />
   </p>
 </div>
 
@@ -48,6 +49,7 @@ Developed with clean architecture and modern Flutter state management practices,
 - **🔐 Secure Authentication:** Secure user authentication flow and encrypted local storage using `flutter_secure_storage`.
 - **🌗 Adaptive Theming:** Support for Dark & Light modes with seamless animated transitions.
 - **🎨 Modern UI/UX:** Built with a focus on a premium user experience utilizing skeleton loading (shimmer effects), custom animations, and clean layouts.
+- **⚙️ Automated CI/CD:** Continuous Integration and Delivery pipeline powered by GitHub Actions for automated builds, checks, and releases.
 
 ---
 
@@ -92,6 +94,22 @@ lib/
  ┣ translation/       # App translations setup
  ┗ main.dart          # Entry point
 ```
+
+---
+
+## ⚙️ CI/CD Pipeline
+
+This project uses a full **GitHub Actions** pipeline that handles everything end-to-end — from code quality checks all the way to publishing the app on the **Google Play Store**, with zero manual steps.
+
+### Pipeline Overview
+- **Trigger:** Runs automatically on every `push` and `pull_request` to the main branches.
+- **Static Analysis:** Runs `flutter analyze` to catch code issues and enforce linting rules before merging.
+- **Automated Testing:** Executes the test suite (`flutter test`) to validate business logic and prevent regressions.
+- **Build:** Builds the signed release App Bundle (AAB).
+- **Deployment:** Automatically uploads and publishes the release build to the **Google Play Console**, completing the full path from commit to store.
+- **Caching:** Caches Flutter/Dart dependencies to speed up subsequent workflow runs.
+
+> This fully automated pipeline takes the app from a single commit all the way to the Play Store, reducing manual overhead and keeping the `main` branch always in a deployable state.
 
 ---
 
