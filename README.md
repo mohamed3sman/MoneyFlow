@@ -154,7 +154,7 @@ Follow these steps to set up the project locally on your machine.
 
 ## 🤝 Contact & Connect
 
-**Email:** [mohamedabdoosman12@gmail.com](mailto:mohamedabdoosman12@gmail.com)
+**Email:** [mohamedabdoosman12@gmail.com](https://mail.google.com/mail/?view=cm&fs=1&to=mohamedabdoosman12@gmail.com)
 
 **Download App:** [Money Flow on Google Play Store](https://play.google.com/store/apps/details?id=com.mohamed.moneyflow&pcampaignid=web_share)
 
